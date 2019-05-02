@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  padding: 1rem;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+#app {
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#button-section {
+  height: 33%;
+}
+
+#csv-upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
+button, #csv-upload + label {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #42f4e2;
+  color: snow;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  box-shadow: 1px 1px 5px gray;
+  text-shadow: 0px 0px 2px black;
+}
+
+#csv-upload + label {
+  text-align: center;
+}
+
+
+
+#text-section {
+  height: 67%
+}
+
+#csv-input,#output {
+  height: 150px;
+  width: 250px;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  overflow: scroll;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  box-shadow: 1px 1px 5px gray;
+}
+
+#output {
+  background-color: snow
+}
+
+@media screen and (min-width: 1023px) {
+  #csv-input,#output {
+    width: 600px;
+    height: 450px;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+}
+
