@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 html,body {
@@ -41,22 +42,28 @@ body {
 button, #csv-upload + label {
   padding: 1rem 2rem;
   width: 100%;
-  background-color: #42f4e2;
+  background-color: #0a186d;
   color: snow;
   font-size: 1.5rem;
   border: 2px solid black;
   box-shadow: 1px 1px 5px gray;
   text-shadow: 0px 0px 2px black;
+  border-radius: 12px;
 }
 
 #csv-upload + label {
   text-align: center;
+
 }
 
 
 
 #text-section {
   height: 67%
+}
+
+#text-section  label {
+  font-size: 1.5rem;
 }
 
 #csv-input,#output {
@@ -69,6 +76,8 @@ button, #csv-upload + label {
   margin: 0.75rem;
   box-shadow: 1px 1px 5px gray;
 }
+
+
 
 #output {
   background-color: snow
